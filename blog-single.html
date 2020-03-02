@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Achilles HTML Template - Portfolio</title>
+  <link rel="stylesheet" href="dist/bundle.css">
+</head>
+<body>
+  <!-- ** Header ** -->
+  <header class="s-header">
+    <div class="l-container">
+      <div class="l-flex l-flex--space-between l-flex--items-center">
+        <div class="e-logo">
+          <a href="index.html"><img src="dist/assets/images/logo.png" alt="Achilles Logo"></a>
+        </div><!-- end .e-logo -->
+        <div class="s-header__right l-flex l-flex--items-center">
+          <nav class="c-nav u-hide-mobile">
+            <ul class="c-nav__list">
+              <li class="c-nav__list_item"><a href="index.html">Home</a></li>
+              <li class="c-nav__list_item"><a href="portfolio.html">Portfolio</a></li>
+              <li class="c-nav__list_item active"><a href="blog.html">Blog</a></li>
+              <li class="c-nav__list_item"><a href="shop.html">Shop</a></li>
+            </ul>
+          </nav>  
+          <div class="s-header__right_icons l-flex">
+            <a href="cart.html"><i class="fa fa-shopping-bag"></i> <span>2</span></a>
+            <a href="#" data-modal-target="search"><i class="fa fa-search"></i></a>
+          </div>
+          <a href="#" class="e-hamburger u-hide-desktop dp_mobile_menu_trigger">
+            <span class="e-hamburger__line"></span>
+            <span class="e-hamburger__line"></span>
+            <span class="e-hamburger__line"></span>
+          </a>
+        </div>
+      </div><!-- end .l-flex -->
+    </div><!-- end .l-container -->
+  </header><!-- end .s-header -->
+
+  <!-- ** Mobile Menu ** -->
+  <section class="s-mobile-menu dp_mobile_menu">
+    <div class="s-mobile-menu__overlay dp_mobile_menu_close"></div>
+    <div class="s-mobile-menu__body">
+      <nav class="c-nav c-nav--block">
+        <ul class="c-nav__list">
+          <li class="c-nav__list_item"><a href="index.html">Home</a></li>
+          <li class="c-nav__list_item"><a href="portfolio.html">Portfolio</a></li>
+          <li class="c-nav__list_item"><a href="blog.html">Blog</a></li>
+          <li class="c-nav__list_item"><a href="shop.html">Shop</a></li>
+        </ul>
+      </nav> 
+    </div><!-- end .s-mobile-menu__body -->
+  </section><!-- end .s-mobile-menu -->
+
+  <!-- ** Hero ** -->
+  <section class="s-hero s-hero--sm">
+    <div class="l-container">
+      <div class="s-hero__inner">
+        <div class="s-hero__inner_text" data-parallax>
+          <h1 class="u-text-center">Lorem ipsum dolor sit amet</h1>
+          <p class="u-text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus consequatur accusamus reiciendis</p>
+        </div>
+      </div>
+    </div><!-- end .l-container -->
+  </section><!-- end .s-hero -->
+
+  <!-- ** Blog ** -->
+  <section class="s-default s-default--2">
+    <div class="l-container">
+      <div class="s-default__body">
+        <div class="c-single-post">
+          <div class="c-single-post__head">
+            <!-- <h2>Praesent sit amet porttitor ante</h2> -->
+            <div class="c-single-post__head_meta">
+              <p><i class="fa fa-calendar"></i> November 2, 2019</p>
+              <p><i class="fa fa-comments"></i> 3</p>
+              <p><i class="fa fa-tags"></i> <a href="#">Tutorial</a>, <a href="#">ReactJs</a></p>
+            </div>
+          </div><!-- end .c-single-post__head -->
+          <div class="c-single-post__body">
+            <p>
+              Maecenas fermentum ipsum quis lacus aliquet tincidunt. Suspendisse gravida, metus nec sagittis iaculis, metus velit convallis 
+              tellus, a semper magna elit in neque. Maecenas purus metus, pharetra ut scelerisque vitae, ornare eu est. Maecenas id molestie 
+              felis, sed feugiat est. Aliquam nec enim sit amet eros luctus sagittis. Aenean condimentum consequat dignissim. Fusce est ipsum, 
+              dignissim non eleifend placerat, tempor at augue.
+            </p>
+            <h2>Sed sodales lorem id ligula porttitor, non luctus mauris scelerisque</h2>
+            <p>
+              Morbi quis placerat purus, nec tristique arcu. Vivamus vehicula ipsum nec leo elementum, porttitor sodales augue posuere. 
+              Morbi volutpat rutrum urna eu vestibulum. Morbi porttitor laoreet neque vitae volutpat. Suspendisse molestie ipsum nibh. 
+              Pellentesque molestie congue ex sed gravida. Aliquam ante risus, lobortis id commodo et, interdum quis enim. Quisque congue 
+              tortor id sollicitudin fermentum. Proin nec viverra leo, ut pulvinar dolor.
+            </p>
+            <blockquote>
+              &ldquo; Having expectations of others means you are trying to fix their lives. Don’t do that. 
+              Fix your own life – that is freedom. &rdquo;
+              <cite>Sadghuru</cite>
+            </blockquote>
+            <p>
+              Sed sodales lorem id ligula porttitor, non luctus mauris scelerisque. Curabitur tellus urna, molestie at convallis vitae, 
+              condimentum ac enim. Quisque leo massa, viverra in nulla quis, elementum aliquet diam. Curabitur sit amet massa risus. 
+              Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed feugiat sollicitudin lacus, non lobortis sapien maximus ut.
+              Nulla malesuada rutrum justo vitae mollis. Ut blandit scelerisque neque ut bibendum. Suspendisse ac pulvinar nisl, eu 
+              molestie nulla.
+            </p>
+          </div>
+        </div><!-- end .c-single-post -->
+      </div><!-- end .s-default__body -->
+    </div><!-- end .l-container -->
+  </section><!-- end .s-default -->
+
+  <!-- ** Comments ** -->
+  <section class="s-comments">
+    <div class="l-container">
+      <div class="s-comments__head">
+        <h2>3 Comments</h2>
+      </div>
+      <div class="s-comments__body">
+        <div class="c-comment">
+          <div class="c-comment__layout">
+            <div class="c-comment__img">
+              
+            </div>
+            <div class="c-comment__info">
+              <p class="c-comment__info_author">John Doe</p>
+              <div class="l-flex l-flex--space-between l-flex--items-center">
+                <p class="c-comment__info_date">On November 2, 2019</p>
+                <a href="#" class="e-btn-text e-btn-text--normal">Reply</a>
+              </div>
+              <div class="c-comment__info_body">
+                <p>
+                  Maecenas purus metus, pharetra ut scelerisque vitae, ornare eu est. Maecenas id molestie felis, sed feugiat est. 
+                  Aliquam nec enim sit amet eros luctus sagittis.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- * Inner comment * -->
+          <div class="c-comment">
+            <div class="c-comment__layout">
+              <div class="c-comment__img">
+                
+              </div>
+              <div class="c-comment__info">
+                <p class="c-comment__info_author">John Doe</p>
+                <div class="l-flex l-flex--space-between l-flex--items-center">
+                  <p class="c-comment__info_date">On November 2, 2019</p>
+                  <a href="#" class="e-btn-text e-btn-text--normal">Reply</a>
+                </div>
+                <div class="c-comment__info_body">
+                  <p>
+                    Maecenas purus metus, pharetra ut scelerisque vitae, ornare eu est. Maecenas id molestie felis, sed feugiat est. 
+                    Aliquam nec enim sit amet eros luctus sagittis.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div><!-- end .c-comment Inner comment -->
+        </div><!-- end .c-comment -->
+        <div class="c-comment">
+          <div class="c-comment__layout">
+            <div class="c-comment__img">
+              
+            </div>
+            <div class="c-comment__info">
+              <p class="c-comment__info_author">John Doe</p>
+              <div class="l-flex l-flex--space-between l-flex--items-center">
+                <p class="c-comment__info_date">On November 2, 2019</p>
+                <a href="#" class="e-btn-text e-btn-text--normal">Reply</a>
+              </div>
+              <div class="c-comment__info_body">
+                <p>
+                  Maecenas purus metus, pharetra ut scelerisque vitae, ornare eu est. Maecenas id molestie felis, sed feugiat est. 
+                  Aliquam nec enim sit amet eros luctus sagittis.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div><!-- end .c-comment -->
+      </div><!-- end .s-comments__body -->
+    </div><!-- end .s-comments -->
+  </section><!-- end .s-comments -->
+
+  <!-- ** Comment reply ** -->
+  <section class="s-comment-reply">
+    <div class="l-container">
+      <div class="s-comment-reply__head">
+        <h2>Leave a comment</h2>
+        <p>Your email address will not be published. Required fields are marked *</p>
+      </div>
+      <div class="s-comment-reply__body">
+        <form action="#" method="post" class="c-form">
+          <div class="c-form__row">
+            <div class="c-form__group">
+              <input type="text" placeholder="Name *" class="e-input e-input--lg" required>
+            </div>
+            <div class="c-form__group">
+              <input type="email" placeholder="Email *" class="e-input e-input--lg" required>
+            </div>
+          </div>
+          <div class="c-form__group">
+            <input type="text" placeholder="Website" class="e-input e-input--lg">
+          </div>
+          <div class="c-form__group">
+            <textarea placeholder="Your message *" class="e-input e-input--lg e-input--textarea" required></textarea>
+          </div>
+          <button type="submit" class="e-btn e-btn--lg u-mt-40">Send message</button>
+        </form>
+      </div>
+    </div><!-- end .l-container -->
+  </section><!-- end .s-comment-reply -->
+
+  <!-- ** Call to action ** -->
+  <section class="s-cta">
+    <div class="l-container">
+      <div class="s-cta__inner">
+        <div class="s-cta__inner_text">
+          <h2>This is a Call-To-Action</h2>
+          <p>Donec convallis ac metus quis auctor. Nullam congue odio magna, eget congue risus aliquam a.</p>
+        </div>
+        <div class="s-cta__inner_action">
+          <a href="#" class="e-btn e-btn--inline">learn more</a>
+        </div>
+      </div><!-- end .s-cta__inner -->
+    </div><!-- end .l-container -->
+  </section><!-- end .s-cta -->
+
+  <!-- ** Footer ** -->
+  <footer class="s-footer">
+    <div class="s-footer__top">
+      <div class="l-container">
+        <div class="l-flex l-flex--row">
+          <div class="l-col l-col-md--one-half u-mb--md-60 l-col-xxs--full">
+            <div class="c-widget">
+              <h6>Contact info</h6>
+              <div class="c-widget__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tortor eros, congue at blandit in, euismod et sem.</p>
+              </div>
+              <div class="c-widget__address">
+                <div class="c-widget__address_row">
+                  <p class="c-widget__address_row-icon"><i class="fa fa-map-marker"></i></p>
+                  <p class="c-widget__address_row-text">Your address here</p>
+                </div>
+                <div class="c-widget__address_row">
+                  <p class="c-widget__address_row-icon"><i class="fa fa-phone"></i></p>
+                  <p class="c-widget__address_row-text">965-124-2547</p>
+                </div>
+                <div class="c-widget__address_row">
+                  <p class="c-widget__address_row-icon"><i class="fa fa-envelope-o"></i></p>
+                  <p class="c-widget__address_row-text">youremail@here</p>
+                </div>
+              </div>
+            </div><!-- end .c-widget -->
+          </div><!-- end .l-col -->
+          <div class="l-col l-col-md--one-half u-mb--md-60 l-col-xxs--full">
+            <div class="c-widget">
+              <h6>Recent Posts</h6>
+              <ul class="c-widget__posts">
+                <li class="c-widget__posts_item">
+                  <p class="c-widget__posts_item-title"><a href="#">Lorem ipsum dolor sit amet</a></p>
+                  <p class="c-widget__posts_item-date">November 12, 2016</p>
+                </li>
+                <li class="c-widget__posts_item">
+                  <p class="c-widget__posts_item-title"><a href="#">Lorem ipsum dolor sit amet</a></p>
+                  <p class="c-widget__posts_item-date">November 12, 2016</p>
+                </li>
+                <li class="c-widget__posts_item">
+                  <p class="c-widget__posts_item-title"><a href="#">Lorem ipsum dolor sit amet</a></p>
+                  <p class="c-widget__posts_item-date">November 12, 2016</p>
+                </li>
+              </ul>
+            </div><!-- end .c-widget -->
+          </div><!-- end .l-col -->
+          <div class="l-col l-col-md--one-half l-col-xxs--full u-mb--xxs-60">
+            <div class="c-widget">
+              <h6>Recent Work</h6>
+              <ul class="c-widget__work">
+                <li class="c-widget__work_item">
+                  <a href="#"><img src="dist/assets/images/portfolio1.jpg" alt=""></a>
+                </li>
+                <li class="c-widget__work_item">
+                  <a href="#"><img src="dist/assets/images/portfolio2.jpg" alt=""></a>
+                </li>
+                <li class="c-widget__work_item">
+                  <a href="#"><img src="dist/assets/images/portfolio3.jpg" alt=""></a>
+                </li>
+                <li class="c-widget__work_item">
+                  <a href="#"><img src="dist/assets/images/portfolio4.jpg" alt=""></a>
+                </li>
+                <li class="c-widget__work_item">
+                  <a href="#"><img src="dist/assets/images/portfolio5.jpg" alt=""></a>
+                </li>
+                <li class="c-widget__work_item">
+                  <a href="#"><img src="dist/assets/images/portfolio6.jpg" alt=""></a>
+                </li>
+              </ul>
+            </div><!-- end .c-widget -->
+          </div><!-- end .l-col -->
+          <div class="l-col l-col-md--one-half l-col-xxs--full">
+            <div class="c-widget">
+              <h6>Contact Us</h6>
+              <form action="" class="c-widget__form">
+                <div class="c-widget__form_group">
+                  <input type="text" class="e-input e-input--light" placeholder="Your name">
+                </div>
+                <div class="c-widget__form_group">
+                  <input type="text" class="e-input e-input--light" placeholder="Your email">
+                </div>
+                <div class="c-widget__form_group">
+                  <textarea class="e-input e-input--light e-input--textarea" placeholder="Message"></textarea>
+                </div>
+                <button class="e-btn e-btn--dark e-btn--full" type="submit">Send message</button>
+              </form>
+            </div><!-- end .c-widget -->
+          </div><!-- end .l-col -->
+        </div><!-- end .l-flex -->
+      </div><!-- end .l-container -->
+    </div><!-- end .s-footer__top -->
+    <div class="s-footer__bottom">
+      <div class="l-container">
+        <div class="l-flex l-flex--row">
+          <div class="l-col--one-half">
+            <p>Achilles | Theme by Damir</p>
+          </div>
+          <div class="l-col--one-half">
+            <div class="c-social c-social--right">
+              <a href="#" class="c-social__item"><i class="fa fa-linkedin"></i></a>
+              <a href="#" class="c-social__item"><i class="fa fa-behance"></i></a>
+              <a href="#" class="c-social__item"><i class="fa fa-dribbble"></i></a>
+              <a href="#" class="c-social__item"><i class="fa fa-delicious"></i></a>
+              <a href="#" class="c-social__item"><i class="fa fa-facebook-f"></i></a>
+              <a href="#" class="c-social__item"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="c-social__item"><i class="fa fa-pinterest-p"></i></a>
+              <a href="#" class="c-social__item"><i class="fa fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div><!-- end .l-container -->
+    </div><!-- end .s-footer__bottom -->
+  </footer><!-- end .footer -->
+
+  <!-- ** Modal ** -->
+  <section class="s-modal" data-modal="search">
+    <div class="s-modal__overlay"></div>
+    <div class="s-modal__inner">
+      <div class="s-modal__inner_close" data-modal-close><i class="fa fa-remove"></i></div>
+      <div class="s-modal__inner_body">
+        <form action="" class="c-form c-form--search">
+          <input type="text" class="e-input" placeholder="Search...">
+          <button type="submit" class="e-btn e-btn--dark e-btn--min">Search</button>
+        </form>
+      </div>
+    </div><!-- end .s-modal__inner -->
+  </section><!-- end .s-modal -->
+
+  <script src="dist/bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+.s-header {
+  padding: 30px 0;
+
+  @media (max-width: $breakpoint-md) {
+    padding: 15px 0;
+  }
+
+  &__right {
+
+    &_icons {
+
+      a {
+        display: block;
+        margin-left: 20px;
+        font-size: 12px;
+        color: $color-txt-primary;
+        position: relative;
+
+        span {
+          position: absolute;
+          top: -7px;
+          right: -7px;
+          font-size: 10px;
+          width: 14px;
+          height: 14px;
+          line-height: 14px;
+          border-radius: 100%;
+          background-color: $color-highlight-primary;
+          display: block;
+          text-align: center;
+          color: $color-light;
+          font-family: $ff-secondary;
+        }
+      }
+    }
+
+  }
+}

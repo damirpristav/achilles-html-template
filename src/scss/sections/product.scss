@@ -1,0 +1,47 @@
+.s-product {
+  padding: 120px 0;
+
+  @media (max-width: $breakpoint-sm) {
+    padding: 80px 0;
+  }
+
+  > .l-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media (max-width: $breakpoint-sm) {
+      display: block;
+    }
+  }
+
+  &__img {
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 50%;
+    background-color: $color-bg-primary;
+    align-self: flex-start;
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    @media (max-width: $breakpoint-sm) {
+      max-width: 100%;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__details {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding-left: 40px;
+    max-width: 50%;
+
+    @media (max-width: $breakpoint-sm) {
+      max-width: 100%;
+      padding-left: 0;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.c-nav {
+
+  &__list {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    border-right: 1px solid $color-txt-primary;
+    
+    &_item {
+      font-family: $ff-secondary;
+      margin-left: 40px;
+
+      a {
+        display: block;
+        font-size: 12px;
+        color: $color-txt-primary;
+        text-transform: uppercase;
+        transition: color .3s ease;
+
+        &:hover {
+          color: $color-highlight-primary;
+        }
+      }
+
+      &.active {
+
+        a {
+          color: $color-highlight-primary;
+        }
+      }
+    }
+  }
+
+  &--block {
+    padding-top: 40px;
+
+    .c-nav__list {
+      display: block;
+      padding-right: 0;
+      border-right: 0;
+      
+      &_item {
+        margin-left: 0;
+        padding: 15px 20px;
+        border-bottom: 4px solid $color-bd-primary;
+      }
+    }
+  }
+}

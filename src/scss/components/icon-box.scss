@@ -1,0 +1,23 @@
+.c-icon-box {
+  display: flex;
+  margin-bottom: 48px;
+
+  &__icon {
+    font-size: 30px;
+    color: $color-highlight-primary;
+    min-width: 50px;
+    max-width: 50px;
+  }
+
+  &__text {
+
+    h5 {
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.c-single-post {
+
+  &__head {
+    margin-bottom: 48px;
+
+    &_meta {
+      display: flex;
+      
+      p {
+        font-size: 14px;
+        margin-right: 20px;
+        color: $color-txt-secondary;
+
+        i {
+          margin-right: 5px;
+        }
+
+        a {
+          color: inherit;
+          transition: color .3s;
+
+          &:hover {
+            color: $color-txt-primary;
+          }
+        }
+      }
+    }
+  }
+
+  &__body {
+
+    h3 {
+      margin-bottom: 24px;
+    }
+
+    p {
+      margin-bottom: 24px;
+    }
+
+    blockquote {
+      margin-bottom: 24px;
+      font-size: 28px;
+      line-height: 1.4;
+      background-color: $color-bg-primary;
+      padding: 40px;
+
+      cite {
+        display: block;
+        margin-top: 20px;
+        font-family: $ff-primary-light;
+        font-style: normal;
+      }
+    }
+  }
+}

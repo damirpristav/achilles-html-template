@@ -1,0 +1,71 @@
+$m-items: 10;
+
+.u-text-center {
+  text-align: center;
+}
+
+.u-btn-wrapper {
+  display: flex;
+  
+  &--center {
+    justify-content: center;
+  }
+}
+
+.u-hide-desktop,
+.u-hide-desktop-f {
+  display: none !important;
+}
+.u-hide-mobile {
+  display: block !important;
+}
+.u-hide-mobile-f {
+  display: flex !important;
+}
+
+.u-overflow-hidden {
+  overflow: hidden;
+}
+
+@for $i from 1 through $m-items {
+  .u-mt-#{$i*10} {
+    margin-top: 10 * $i * 1px;
+  }
+  .u-mb-#{$i*10} {
+    margin-top: 10 * $i * 1px;
+  }
+}
+
+@media(max-width: $breakpoint-md) {
+  .u-hide-mobile,
+  .u-hide-mobile-f {
+    display: none !important;
+  }
+  .u-hide-desktop {
+    display: block !important;
+  }
+  .u-hide-desktop-f {
+    display: flex !important;
+  }
+  @for $i from 1 through $m-items {
+    .u-mb--md-#{$i*10} {
+      margin-bottom: 10 * $i * 1px;
+    }
+  }
+}
+
+@media(max-width: $breakpoint-xs) {
+  @for $i from 1 through $m-items {
+    .u-mb--xs-#{$i*10} {
+      margin-bottom: 10 * $i * 1px;
+    }
+  }
+}
+
+@media(max-width: $breakpoint-xxs) {
+  @for $i from 1 through $m-items {
+    .u-mb--xxs-#{$i*10} {
+      margin-bottom: 10 * $i * 1px;
+    }
+  }
+}

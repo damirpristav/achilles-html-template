@@ -1,0 +1,12 @@
+.c-image {
+  display: flex;
+
+  &--right {
+    justify-content: flex-end;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}

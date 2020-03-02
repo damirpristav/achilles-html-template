@@ -1,0 +1,28 @@
+.c-filters {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__item {
+    font-size: 14px;
+    font-family: $ff-primary-light;
+    letter-spacing: 1px;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: color .3s ease;
+    margin-bottom: 12px;
+
+    &.active {
+      border-color: $color-bd-primary;
+
+      &:hover {
+        color: $color-txt-primary;
+      }
+    }
+
+    &:hover {
+      color: $color-highlight-primary;
+    }
+  }
+}

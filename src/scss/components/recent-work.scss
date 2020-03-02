@@ -1,0 +1,121 @@
+.c-recent-work {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -6px;
+  margin-right: -6px;
+
+  &__item {
+    width: 25%;
+    position: relative;
+    margin-bottom: 12px;
+    padding: 0 6px;
+    overflow: hidden;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 6px;
+      width: calc(100% - 12px);
+      height: 100%;
+      background-color: $color-bg-primary;
+      content: '';
+      opacity: 0;
+      transition: opacity .3s ease;
+    }
+
+    &.filtered {
+
+      &::before {
+        opacity: 1;
+        cursor: not-allowed;
+      }
+
+      &:hover {
+        .c-recent-work__item_info {
+          display: none;
+        }
+      }
+    }
+
+    @media (max-width: $breakpoint-md) {
+      width: 50%;
+    }
+    @media (max-width: $breakpoint-xxs) {
+      width: 100%;
+    }
+
+    &_img {
+      padding-top: calc(181/271 * 100%);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &_info {
+      position: absolute;
+      top: 0;
+      right: 6px;
+      width: calc(100% - 12px);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba($color-highlight-primary, 0.8);
+      opacity: 0;
+      transition: opacity .3s ease;
+
+      @media (max-width: $breakpoint-md) {
+        display: none;
+      }
+
+      &-actions {
+        margin-bottom: 18px;
+        display: flex;
+
+        a {
+          display: block;
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
+          text-align: center;
+          background-color: $color-txt-primary;
+          color: $color-light;
+          border-radius: 100%;
+          margin: 0 6px;
+          font-size: 12px;
+        }
+      }
+
+      h5 {
+        margin-bottom: 18px;
+        color: $color-light;
+      }
+
+      p {
+        color: $color-light;
+        font-size: 12px;
+      }
+    }
+
+    &:hover {
+
+      .c-recent-work__item_info {
+        opacity: 1;
+      }
+    }
+  }
+
+  &--lg {
+
+    .c-recent-work__item {
+      width: calc(1/3 * 100%);
+
+      @media (max-width: $breakpoint-md) {
+        width: 50%;
+      }
+      @media (max-width: $breakpoint-xxs) {
+        width: 100%;
+      }
+    }
+  }
+}

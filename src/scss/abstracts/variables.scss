@@ -1,0 +1,44 @@
+// Colors
+$color-txt-primary: #343536;
+$color-txt-secondary: #6C6D6F;
+$color-txt-tertiary: #e5e6e7;
+
+$color-highlight-primary: #FF4759;
+
+$color-light: #fff;
+$color-dark: #000;
+
+$color-bg-primary: #F3F3F5;
+$color-bg-secondary: #343536;
+$color-bg-tertiary: #2a2b2c;
+$color-bg-quaternary: #6B6D6F;
+
+$color-bd-primary: #ebebeb;
+$color-bd-secondary: #6B6D6F;
+$color-bd-tertiary: #343536;
+
+// Fonts
+$ff-primary: 'latoregular', sans-serif;
+$ff-primary-light: 'latolight', sans-serif;
+$ff-primary-italic: 'latoitalic', sans-serif;
+$ff-secondary: 'montserratregular', sans-serif;
+$ff-secondary-bold: 'montserratbold', sans-serif;
+
+// Grid
+$container-w: 1150px;
+$gutter: 15px;
+
+// Paddings
+$section-padding: 60px;
+
+// Breakpoints
+$breakpoint-lg: 1199px;
+$breakpoint-lg-min: 1200px;
+$breakpoint-md: 991px;
+$breakpoint-md-min: 992px;
+$breakpoint-sm: 767px;
+$breakpoint-sm-min: 768px;
+$breakpoint-xs: 575px;
+$breakpoint-xs-min: 576px;
+$breakpoint-xxs: 479px;
+$breakpoint-xxs-min: 480px;

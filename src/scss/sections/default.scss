@@ -1,0 +1,29 @@
+.s-default {
+  padding: $section-padding 0;
+
+  &--pb-lg {
+    padding: calc(#{$section-padding} * 2) 0;
+  }
+
+  &--no-pb {
+    padding-bottom: 0;
+  }
+
+  &__head {
+    margin-bottom: 60px;
+  }
+
+  &--2 {
+
+    .s-default__body {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: $breakpoint-md) {
+    &--pb-lg {
+      padding: $section-padding 0;
+    }
+  }
+}

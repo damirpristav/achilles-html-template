@@ -1,0 +1,40 @@
+.s-footer {
+
+  &__top {
+    background-color: $color-bg-secondary;
+    padding: 120px 0;
+  }
+  
+  &__bottom {
+    background-color: $color-bg-tertiary;
+    padding: 24px 0;
+
+    p {
+      font-size: 14px;
+      color: $color-txt-secondary;
+    }
+
+    @media (max-width: $breakpoint-sm) {
+      .l-col--one-half {
+        width: 100%;
+        text-align: center;
+
+        &:first-child {
+          order: 2;
+        }
+        &:last-child {
+          order: 1;
+          margin-bottom: 24px;
+
+          .c-social {
+            justify-content: center;
+
+            &__item {
+              margin: 0 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

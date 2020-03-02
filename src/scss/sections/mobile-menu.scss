@@ -1,0 +1,38 @@
+.s-mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  transition: left .3s ease;
+
+  &.active {
+    left: 0;
+    
+    .s-mobile-menu__overlay {
+      opacity: 0.3;
+    }
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color-bg-secondary;
+    opacity: 0;
+    transition: opacity .3s ease;
+  }
+
+  &__body {
+    position: absolute;
+    width: 240px;
+    height: 100%;
+    right: 0;
+    top: 0;
+    overflow-y: auto;
+    background-color: $color-light;
+  }
+}

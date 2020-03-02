@@ -1,0 +1,34 @@
+.s-cta {
+  padding: 48px 0;
+  background-color: $color-bg-primary;
+  border-top: 1px solid $color-bd-primary;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: $breakpoint-xs) {
+      display: block;
+    }
+
+    &_text {
+
+      h2 {
+        margin-bottom: 18px;
+      }
+    }
+
+    &_action {
+      margin-left: 120px;
+
+      @media (max-width: $breakpoint-md) {
+        margin-left: 40px;
+      }
+      @media (max-width: $breakpoint-xs) {
+        margin-left: 0;
+        margin-top: 24px;
+      }
+    }
+  }
+}

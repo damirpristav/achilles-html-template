@@ -1,0 +1,35 @@
+.c-form {
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+
+    div:first-child {
+      margin-right: 20px;
+    }
+  }
+
+  &__group {
+    display: block;
+    width: 100%;
+  }
+
+  &--search {
+    display: flex;
+    align-items: center;
+
+    input {
+      margin-bottom: 0;
+      width: auto;
+      flex-grow: 1;
+    }
+
+    @media (max-width: $breakpoint-xxs) {
+      display: block;
+
+      input, button {
+        width: 100%;
+      }
+    }
+  }
+}

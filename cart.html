@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Achilles HTML Template - Portfolio</title>
+  <link rel="stylesheet" href="dist/bundle.css">
+</head>
+<body>
+  <!-- ** Header ** -->
+  <header class="s-header">
+    <div class="l-container">
+      <div class="l-flex l-flex--space-between l-flex--items-center">
+        <div class="e-logo">
+          <a href="index.html"><img src="dist/assets/images/logo.png" alt="Achilles Logo"></a>
+        </div><!-- end .e-logo -->
+        <div class="s-header__right l-flex l-flex--items-center">
+          <nav class="c-nav u-hide-mobile">
+            <ul class="c-nav__list">
+              <li class="c-nav__list_item"><a href="index.html">Home</a></li>
+              <li class="c-nav__list_item"><a href="portfolio.html">Portfolio</a></li>
+              <li class="c-nav__list_item"><a href="blog.html">Blog</a></li>
+              <li class="c-nav__list_item active e-btn-text--normal"><a href="shop.html">Shop</a></li>
+            </ul>
+          </nav>  
+          <div class="s-header__right_icons l-flex">
+            <a href="cart.html"><i class="fa fa-shopping-bag"></i> <span>2</span></a>
+            <a href="#" data-modal-target="search"><i class="fa fa-search"></i></a>
+          </div>
+          <a href="#" class="e-hamburger u-hide-desktop dp_mobile_menu_trigger">
+            <span class="e-hamburger__line"></span>
+            <span class="e-hamburger__line"></span>
+            <span class="e-hamburger__line"></span>
+          </a>
+        </div>
+      </div><!-- end .l-flex -->
+    </div><!-- end .l-container -->
+  </header><!-- end .s-header -->
+
+  <!-- ** Mobile Menu ** -->
+  <section class="s-mobile-menu dp_mobile_menu">
+    <div class="s-mobile-menu__overlay dp_mobile_menu_close"></div>
+    <div class="s-mobile-menu__body">
+      <nav class="c-nav c-nav--block">
+        <ul class="c-nav__list">
+          <li class="c-nav__list_item"><a href="index.html">Home</a></li>
+          <li class="c-nav__list_item"><a href="portfolio.html">Portfolio</a></li>
+          <li class="c-nav__list_item"><a href="blog.html">Blog</a></li>
+          <li class="c-nav__list_item"><a href="shop.html">Shop</a></li>
+        </ul>
+      </nav> 
+    </div><!-- end .s-mobile-menu__body -->
+  </section><!-- end .s-mobile-menu -->
+
+  <!-- ** Hero ** -->
+  <section class="s-hero s-hero--sm">
+    <div class="l-container">
+      <div class="s-hero__inner">
+        <div class="s-hero__inner_text" data-parallax>
+          <h1 class="u-text-center">Cart</h1>
+          <p class="u-text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus consequatur accusamus reiciendis</p>
+        </div>
+      </div>
+    </div><!-- end .l-container -->
+  </section><!-- end .s-hero -->
+
+  <!-- ** Cart ** -->
+  <section class="s-default">
+    <div class="l-container">
+      <div class="c-cart">
+        <div class="c-cart__head">
+          <div class="c-cart-table">
+            <div class="c-cart-table__row c-cart-table__row--top">
+              <div class="c-cart-table__row_cell">&nbsp;</div>
+              <div class="c-cart-table__row_cell">&nbsp;</div>
+              <div class="c-cart-table__row_cell">Product</div>
+              <div class="c-cart-table__row_cell">Price</div>
+              <div class="c-cart-table__row_cell">Quantity</div>
+              <div class="c-cart-table__row_cell">Total</div>
+            </div><!-- end .c-cart-table__row -->
+            <div class="c-cart-table__row">
+              <div class="c-cart-table__row_cell">
+                <a href="#" class="e-btn-text e-btn-text--normal"><i class="fa fa-remove"></i></a>
+              </div>
+              <div class="c-cart-table__row_cell">
+                <img src="dist/assets/images/shop1.png" alt="">
+              </div>
+              <div class="c-cart-table__row_cell" data-title="Product">Quotable Coffee Mug 1</div>
+              <div class="c-cart-table__row_cell" data-title="Price">$15.25</div>
+              <div class="c-cart-table__row_cell" data-title="Quantity">
+                <input type="number" class="e-input" value="1" min="1">
+              </div>
+              <div class="c-cart-table__row_cell" data-title="Total">$15.25</div>
+            </div><!-- end .c-cart-table__row -->
+            <div class="c-cart-table__row">
+              <div class="c-cart-table__row_cell">
+                <a href="#" class="e-btn-text e-btn-text--normal"><i class="fa fa-remove"></i></a>
+              </div>
+              <div class="c-cart-table__row_cell">
+                <img src="dist/assets/images/shop2.png" alt="">
+              </div>
+              <div class="c-cart-table__row_cell" data-title="Product">Quotable Coffee Mug 2</div>
+              <div class="c-cart-table__row_cell" data-title="Price">$14.00</div>
+              <div class="c-cart-table__row_cell" data-title="Quantity">
+                <input type="number" class="e-input" value="1" min="1">
+              </div>
+              <div class="c-cart-table__row_cell" data-title="Total">$14.00</div>
+            </div><!-- end .c-cart-table__row -->
+          </div><!-- end .c-cart-table -->
+        </div><!-- end .c-cart__head -->
+        <div class="c-cart__actions">
+          <form action="">
+            <input type="text" placeholder="Coupon code" class="e-input">
+            <button type="submit" class="e-btn e-btn--dark">Apply coupon</button>
+          </form>
+          <a href="#" class="e-btn e-btn--dark e-btn--inline">Update cart</a>
+        </div><!-- end .c-cart__actions -->
+        <div class="c-cart__foot">
+          <div class="c-cart__foot_inner">
+            <h3>Cart totals</h3>
+            <div class="c-cart__foot_inner-data">
+              <p>Subtotal</p>
+              <p>$29.25</p>
+            </div>
+            <div class="c-cart__foot_inner-data">
+              <p>Total</p>
+              <p>$29.25</p>
+            </div>
+            <a href="#" class="e-btn e-btn--dark e-btn--inline">Proceed to checkout</a>
+          </div>
+        </div><!-- end .c-cart__foot -->
+      </div><!-- end .c-cart -->
+    </div><!-- end .l-container -->
+  </section><!-- end .s-default -->
+
+  <!-- ** Call to action ** -->
+  <section class="s-cta">
+    <div class="l-container">
+      <div class="s-cta__inner">
+        <div class="s-cta__inner_text">
+          <h2>This is a Call-To-Action</h2>
+          <p>Donec convallis ac metus quis auctor. Nullam congue odio magna, eget congue risus aliquam a.</p>
+        </div>
+        <div class="s-cta__inner_action">
+          <a href="#" class="e-btn e-btn--inline">learn more</a>
+        </div>
+      </div><!-- end .s-cta__inner -->
+    </div><!-- end .l-container -->
+  </section><!-- end .s-cta -->
+
+  <!-- ** Footer ** -->
+  <footer class="s-footer">
+    <div class="s-footer__top">
+      <div class="l-container">
+        <div class="l-flex l-flex--row">
+          <div class="l-col l-col-md--one-half u-mb--md-60 l-col-xxs--full">
+            <div class="c-widget">
+              <h6>Contact info</h6>
+              <div class="c-widget__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tortor eros, congue at blandit in, euismod et sem.</p>
+              </div>
+              <div class="c-widget__address">
+                <div class="c-widget__address_row">
+                  <p class="c-widget__address_row-icon"><i class="fa fa-map-marker"></i></p>
+                  <p class="c-widget__address_row-text">Your address here</p>
+                </div>
+                <div class="c-widget__address_row">
+                  <p class="c-widget__address_row-icon"><i class="fa fa-phone"></i></p>
+                  <p class="c-widget__address_row-text">965-124-2547</p>
+                </div>
+                <div class="c-widget__address_row">
+                  <p class="c-widget__address_row-icon"><i class="fa fa-envelope-o"></i></p>
+                  <p class="c-widget__address_row-text">youremail@here</p>
+                </div>
+              </div>
+            </div><!-- end .c-widget -->
+          </div><!-- end .l-col -->
+          <div class="l-col l-col-md--one-half u-mb--md-60 l-col-xxs--full">
+            <div class="c-widget">
+              <h6>Recent Posts</h6>
+              <ul class="c-widget__posts">
+                <li class="c-widget__posts_item">
+                  <p class="c-widget__posts_item-title"><a href="#">Lorem ipsum dolor sit amet</a></p>
+                  <p class="c-widget__posts_item-date">November 12, 2016</p>
+                </li>
+                <li class="c-widget__posts_item">
+                  <p class="c-widget__posts_item-title"><a href="#">Lorem ipsum dolor sit amet</a></p>
+                  <p class="c-widget__posts_item-date">November 12, 2016</p>
+                </li>
+                <li class="c-widget__posts_item">
+                  <p class="c-widget__posts_item-title"><a href="#">Lorem ipsum dolor sit amet</a></p>
+                  <p class="c-widget__posts_item-date">November 12, 2016</p>
+                </li>
+              </ul>
+            </div><!-- end .c-widget -->
+          </div><!-- end .l-col -->
+          <div class="l-col l-col-md--one-half l-col-xxs--full u-mb--xxs-60">
+            <div class="c-widget">
+              <h6>Recent Work</h6>
+              <ul class="c-widget__work">
+                <li class="c-widget__work_item">
+                  <a href="#"><img src="dist/assets/images/portfolio1.jpg" alt=""></a>
+                </li>
+                <li class="c-widget__work_item">
+                  <a href="#"><img src="dist/assets/images/portfolio2.jpg" alt=""></a>
+                </li>
+                <li class="c-widget__work_item">
+                  <a href="#"><img src="dist/assets/images/portfolio3.jpg" alt=""></a>
+                </li>
+                <li class="c-widget__work_item">
+                  <a href="#"><img src="dist/assets/images/portfolio4.jpg" alt=""></a>
+                </li>
+                <li class="c-widget__work_item">
+                  <a href="#"><img src="dist/assets/images/portfolio5.jpg" alt=""></a>
+                </li>
+                <li class="c-widget__work_item">
+                  <a href="#"><img src="dist/assets/images/portfolio6.jpg" alt=""></a>
+                </li>
+              </ul>
+            </div><!-- end .c-widget -->
+          </div><!-- end .l-col -->
+          <div class="l-col l-col-md--one-half l-col-xxs--full">
+            <div class="c-widget">
+              <h6>Contact Us</h6>
+              <form action="" class="c-widget__form">
+                <div class="c-widget__form_group">
+                  <input type="text" class="e-input e-input--light" placeholder="Your name">
+                </div>
+                <div class="c-widget__form_group">
+                  <input type="text" class="e-input e-input--light" placeholder="Your email">
+                </div>
+                <div class="c-widget__form_group">
+                  <textarea class="e-input e-input--light e-input--textarea" placeholder="Message"></textarea>
+                </div>
+                <button class="e-btn e-btn--dark e-btn--full" type="submit">Send message</button>
+              </form>
+            </div><!-- end .c-widget -->
+          </div><!-- end .l-col -->
+        </div><!-- end .l-flex -->
+      </div><!-- end .l-container -->
+    </div><!-- end .s-footer__top -->
+    <div class="s-footer__bottom">
+      <div class="l-container">
+        <div class="l-flex l-flex--row">
+          <div class="l-col--one-half">
+            <p>Achilles | Theme by Damir</p>
+          </div>
+          <div class="l-col--one-half">
+            <div class="c-social c-social--right">
+              <a href="#" class="c-social__item"><i class="fa fa-linkedin"></i></a>
+              <a href="#" class="c-social__item"><i class="fa fa-behance"></i></a>
+              <a href="#" class="c-social__item"><i class="fa fa-dribbble"></i></a>
+              <a href="#" class="c-social__item"><i class="fa fa-delicious"></i></a>
+              <a href="#" class="c-social__item"><i class="fa fa-facebook-f"></i></a>
+              <a href="#" class="c-social__item"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="c-social__item"><i class="fa fa-pinterest-p"></i></a>
+              <a href="#" class="c-social__item"><i class="fa fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div><!-- end .l-container -->
+    </div><!-- end .s-footer__bottom -->
+  </footer><!-- end .footer -->
+
+  <!-- ** Modal ** -->
+  <section class="s-modal" data-modal="search">
+    <div class="s-modal__overlay"></div>
+    <div class="s-modal__inner">
+      <div class="s-modal__inner_close" data-modal-close><i class="fa fa-remove"></i></div>
+      <div class="s-modal__inner_body">
+        <form action="" class="c-form c-form--search">
+          <input type="text" class="e-input" placeholder="Search...">
+          <button type="submit" class="e-btn e-btn--dark e-btn--min">Search</button>
+        </form>
+      </div>
+    </div><!-- end .s-modal__inner -->
+  </section><!-- end .s-modal -->
+
+  <script src="dist/bundle.js"></script>
+</body>
+</html>
